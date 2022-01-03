@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-elemento: hsl(8, 70%, 50%);
+
+  --color-fondo: hsl(0, 0%, 90%);
+  --color-base: hsl(0, 0%, 70%);
+
+  --medida-elemento: 0.8em;
+}
+
+body {
+  height: 100vh;
+
+  background-color: var(--color-fondo);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.muestra__deletreo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.02em;
+
+  background-color: var(--color-base);
+
+  --numero-de-letras: 10;
+  --retraso: 0.2s;
+  --duracion: calc(var(--numero-de-letras) * var(--retraso));
+}
+
+.muestra__deletreo .letra {
+  font-size: 0.8em;
+  color: var(--color-elemento);
+
+  /* 
+  animation-name: deletreo;
+  animation-duration: var(--duracion);
+  animation-iteration-count: infinite;
+  animation-delay: 0s;     
+  animation-timing-function: linear; 
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;  
+  */
+
+  animation: deletreo var(--duracion) infinite linear;
+}
+
+.muestra__deletreo .letra-01 {
+  animation-delay: calc(1 * var(--retraso));
+}
+.muestra__deletreo .letra-02 {
+  animation-delay: calc(2 * var(--retraso));
+}
+.muestra__deletreo .letra-03 {
+  animation-delay: calc(3 * var(--retraso));
+}
+.muestra__deletreo .letra-04 {
+  animation-delay: calc(4 * var(--retraso));
+}
+.muestra__deletreo .letra-05 {
+  animation-delay: calc(5 * var(--retraso));
+}
+.muestra__deletreo .letra-06 {
+  animation-delay: calc(6 * var(--retraso));
+}
+.muestra__deletreo .letra-07 {
+  animation-delay: calc(7 * var(--retraso));
+}
+.muestra__deletreo .letra-08 {
+  animation-delay: calc(8 * var(--retraso));
+}
+.muestra__deletreo .letra-09 {
+  animation-delay: calc(9 * var(--retraso));
+}
+.muestra__deletreo .letra-10 {
+  animation-delay: calc(10 * var(--retraso));
+}
+
+@keyframes deletreo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
