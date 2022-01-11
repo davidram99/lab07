@@ -1,28 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --color-elemento: hsl(8, 70%, 50%);
-
-  --color-fondo: hsl(0, 0%, 90%);
-  --color-base: hsl(0, 0%, 70%);
-
-  --medida-elemento: 0.8em;
-}
-
-body {
-  height: 100vh;
-
-  background-color: var(--color-fondo);
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .muestra__deletreo {
   display: flex;
   justify-content: center;

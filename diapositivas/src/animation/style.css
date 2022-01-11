@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+
+  background-color: whitesmoke;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: sandybrown;
+  padding: 0.5em;
+}
+
+.item {
+  animation: redimension 1.5s 1s;
+}
+
+@keyframes redimension {
+  0% {
+    width: 200px;
+    height: 100px;
+  }
+  25% {
+    width: 250px;
+  }
+  75% {
+    width: 300px;
+  }
+  100% {
+    width: 200px;
+    height: 200px;
+  }
+}

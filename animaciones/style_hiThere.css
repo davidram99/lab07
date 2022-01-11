@@ -1,0 +1,17 @@
+.square {
+    display: inline-block;
+    width: var(--medida-elemento);
+    height: var(--medida-elemento);
+    background: whiteSmoke;
+    box-shadow: 4px -40px 60px 5px rgb(26, 117, 206) inset;
+}
+.hithere {
+    animation: hithere 1s ease infinite;
+}
+@keyframes hithere {
+    30% { transform: scale(1.2); }
+    40%, 60% { transform: rotate(-20deg) scale(1.2); }
+    50% { transform: rotate(20deg) scale(1.2); }
+    70% { transform: rotate(0deg) scale(1.2); }
+    100% { transform: scale(1); }
+}
