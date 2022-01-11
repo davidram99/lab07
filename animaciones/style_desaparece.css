@@ -1,5 +1,5 @@
 .flash {
-    animation: flash 500ms ease infinite alternate;
+    animation: flash 500ms infinite alternate;
   }
   @keyframes flash {
       from { opacity: 1; }	
